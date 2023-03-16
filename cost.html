@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IC "Repair Design Project"</title>
+	<link rel="stylesheet" href="css/cost.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-content">
+			    <div class="header-logo">
+				    <a class="header-logo__link">IC "Repair Design Project"</a>
+			    </div>
+			    <nav>
+				    <ul class="header-menu">
+					    <li class="header-menu__item"><a href="index.html">HOME</a></li>
+					    <li class="header-menu__item"><a href="#">PROJECTS</a></li>
+					    <li class="header-menu__item"><a href="#">MEASUREMENT</a></li>
+					    <li class="header-menu__item"><a href="#">TEAM</a></li>
+					    <li class="header-menu__item"><a href="#">REVIEWS</a></li>
+					    <li class="header-menu__item"><a href="#">CONTACTS</a></li>
+				    </ul>
+			    </nav>
+			    <div class="header-tel">
+				    <a class="header-tel__link" href="tel:+79287683239">+7 (928) 768-32-39</a>
+			    </div>
+			    <button class="button header-button">Request a call</button>
+		    </div>
+		</header>
+	
+		<div class="main-picture">
+			<div class="main-picture__background">
+			
+			
+   
+		<section class="form-1"> 
+				<form id="Form1" name="Form1">
+					<h1>Расчет стоимости ремонта</h1>			
+					<div id="Name">	
+							<label for="selectionName">Тип помещения*</label>
+							<select id="selectionName" name="selectionName" >
+								 <!-- В опциях в value перечислены цены за ремонт 1м2--> 
+								 <option  value="0">-- Выберите тип помещения--</option>
+								 <option  value="1000">Жилая комната</option>
+								 <option  value="1200">Кухня</option>
+								 <option  value="1500">Ванная</option>
+								 <option  value="1">Вся квартира</option>		
+							 </select>	
+					</div>	
+					<div id="bath" class="hide">	
+							<label for="bathType">Тип санузла*</label>
+							<select id="bathType" name="bathType" >
+								 <!-- В опциях в value перечислены цены за ремонт 1м2--> 
+								 <option  value="1">-- Выберите тип санузла--</option>
+								 <option  value="1.9">Совмещенный</option>
+								 <option  value="1">Туалет</option>
+								 <option  value="1.2">Ванная</option>					
+							 </select>	
+					</div>	
+					<div id="ceil">		
+							<label for="selectionCeil">Высота потолков*</label>
+							<select id="selectionCeil" name="selectionCeil">
+								
+								 <option  value="0">-- Выберите высоту потолков--</option>
+								 <option  value="2.5">2,5м</option>
+								 <option  value="2.7">2,7м</option>
+								 <option  value="3">3м</option>	
+							 </select>	
+					</div>	
+					<div id="repair">		
+						<label for="selectionRepair">Тип ремонта*</label>
+							<select id="selectionRepair" name="selectionRepair">
+
+								 <option  value="0">-- Выберите тип ремонта--</option>
+								 <option  value="1">Косметический</option>
+								 <option  value="1.5">Стандартный</option>
+								 <option  value="1.8">Капитальный</option>
+								 <option  value="2.5">Евроремонт</option>		
+							 </select>	
+					</div>	
+				</form>
+		</section> 
+<!-- При выборе пункта "Вся квартира"-->
+		<section id="allFlat" class="form-2 hide" > 
+			<form id="Form2" name="Form2">
+					<h2>Дополнительные параметры</h2>
+					<div id="flatVariant">	
+						<label for="selectionVariant">Вариант жилья*</label> 
+						  <select id="selectionVariant" name="selectionVariant" >
+							<!-- В опциях в value перечислены цены за ремонт 1м2--> 
+							<option  value="0">-- Выберите вариант жилья--</option>
+							<option id="second" value="1700">Вторичное жилье</option>
+							<option id="first" value="1200">Новостройка</option>
+							<option id="privat" value="2000">Частный дом</option>	
+						  </select> 
+					</div>	
+
+					  <div id="roomsAmount" class="hide"> 
+							  <label for="selectionRooms">Кол-во комнат</label>   
+							  <select id="selectionRooms" name="selectionRooms">
+								<option id="r1" value="1">1</option>
+								<option id="r2" value="1.5">2</option>
+								<option id="r3" value="2.6">3</option>	
+								<option id="r4" value="3.7">4</option>	
+							  </select> 
+					  </div> 
+			</form>	
+		</section>  
+
+		<div class="square">  
+						<p>Общая площадь (комнаты/помещения)</p>
+						<input id="square" type="text" value="1" placeholder="Площадь"> m2
+		</div>
+
+		<div class="finalResult">  
+			<p>Стоимость ремонта от : <span id="result">0</span> руб</p>
+			<p>* - обязательные параметры<p>
+			<a href="index.html"> Вернуться назад </a>
+		</div>	
+    </div>
+
+	</div>
+
+</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

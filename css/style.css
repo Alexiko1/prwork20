@@ -41,6 +41,7 @@ a:hover {
 	font-style: italic;
     text-transform: uppercase;
 	cursor: pointer;
+	
 }
 .title {
     font-size: 40px;
@@ -146,6 +147,7 @@ a:hover {
 }
 .main-button__calculate {
 	margin-right: 20px;
+	float: left;
 }
 .main-button__submit {
 	background-image: none; 
@@ -1404,7 +1406,7 @@ a:hover {
 		height: 51px;
 		margin-bottom: -5.5%;
 	}
-.checkbox {
+    .checkbox {
 		padding-left: 0px;
 		align-self: start;
 		margin-top: 26px;
